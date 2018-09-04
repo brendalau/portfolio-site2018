@@ -6,21 +6,6 @@ html, body {
 	font-family: Baskerville, serif;
 }
 
-.home-img {
-	width: 100%;
-	position: absolute;
-}
-
-@media only screen and (min-width: 600px) {
-	.home-img {
-		margin-top: -60%;
-	}
-}
-
-.nav-bar-div {
-	position: relative;
-}
-
 .home-img-div {
 	padding: 0;
 	overflow: hidden;
@@ -29,26 +14,110 @@ html, body {
 	height: -moz-available; 
 }
 
-.nav-bar-links {
-	padding-top: 80px;
-	padding-left: 15px;
-	border-left: 1px solid white;
-	height: 100%;
-	margin-left: 20%;
+.home-img {
+	width: 100%;
+	position: absolute;
 }
 
-.nav-bar-brenda-lau {
-	font-style: italic;
-	font-weight: bold;
-	margin-bottom: 60px;
+@media only screen and (max-width: 767px) {
+	.nav-bar-div-condensed {
+		padding-bottom: 0;
+	}
+
+	.nav-bar-div-expanded {
+		display: none;
+	}
+
+	.nav-bar-brenda-lau {
+		font-style: italic;
+		font-weight: bold;
+		margin: 20px;
+		display: inline-block;
+	}
+
+	.navbar-burger {
+		display: inline-block;
+		float: right;
+		position: fixed;
+		top: 0;
+		right: 0;
+	}
+
+	.nav-menu {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 66%;
+		float: right;
+		height: -webkit-fill-available;
+		height: -moz-available;
+		background-color: #000216;
+	}
+
+	.nav-bar-links {
+		padding-top: 80px;
+		height: 100%;
+		margin: auto auto 80px 10%;
+	}
+
+	.nav-bar-about-resume {
+		margin-bottom: 36px;
+	}
+
+	.nav-bar-work {
+		margin-bottom: 72px;
+	}
+
+	.social-links {
+	margin: auto auto 80px 10%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
 }
 
-.nav-bar-about-resume {
-	margin-bottom: 36px;
-}
+@media only screen and (min-width: 768px) {
+	.home-img {
+		margin-top: -60%;
+	}
 
-.nav-bar-work {
-	margin-bottom: 72px;
+	.nav-bar-div-expanded {
+		position: relative;
+	}
+
+	.nav-bar-div-condensed, .nav-menu {
+		display: none;
+	}
+
+	.nav-bar-links {
+		padding-top: 80px;
+		padding-left: 15px;
+		border-left: 1px solid white;
+		height: 100%;
+		margin: auto auto 80px 20%;
+	}
+
+	.nav-bar-brenda-lau {
+		font-style: italic;
+		font-weight: bold;
+		margin-bottom: 60px;
+	}
+
+	.nav-bar-about-resume {
+		margin-bottom: 36px;
+	}
+
+	.nav-bar-work {
+		margin-bottom: 72px;
+	}
+
+	.social-links {
+		margin: auto auto 80px 20%;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+	}
 }
 
 a {
@@ -61,13 +130,6 @@ a:hover {
 
 li.active>a {
 	text-decoration: underline;
-}
-
-.social-links {
-	margin: auto auto 80px 20%;
-	bottom: 0;
-	left: 0;
-	position: absolute;
 }
 
 a.social-link {
