@@ -14,7 +14,7 @@ html, body {
 	height: -moz-available; 
 }
 
-.home-img {
+div.home-img-div>img {
 	width: 100%;
 	position: absolute;
 }
@@ -22,6 +22,7 @@ html, body {
 @media only screen and (max-width: 767px) {
 	.nav-bar-div-condensed {
 		padding-bottom: 0;
+		border-bottom: 1px solid white;
 	}
 
 	.nav-bar-div-expanded {
@@ -70,11 +71,37 @@ html, body {
 	}
 
 	.social-links {
-	margin: auto auto 80px 10%;
-	bottom: 0;
-	left: 0;
-	position: absolute;
-}
+		margin: auto auto 80px 10%;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	.about-div-container {
+		padding: 0;
+		position: relative;
+		height: -webkit-fill-available;
+		height: -moz-available; 
+	}
+
+	.about-div-content {
+		margin: 0;
+		padding: 80px 40px;
+	}
+
+	.about-img-div {
+		padding: 0;
+		width: 100%;
+	}
+
+	div.about-img-div>img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	.about-text {
+		padding-top: 40px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -84,6 +111,7 @@ html, body {
 
 	.nav-bar-div-expanded {
 		position: relative;
+		padding: 0;
 	}
 
 	.nav-bar-div-condensed, .nav-menu {
@@ -117,6 +145,32 @@ html, body {
 		bottom: 0;
 		left: 0;
 		position: absolute;
+	}
+
+	.about-div-container {
+		padding: 0;
+		position: relative;
+		height: -webkit-fill-available;
+		height: -moz-available; 
+	}
+
+	.about-div-content {
+		margin: 0;
+		padding: 80px;
+	}
+
+	.about-img-div {
+		padding: 0;
+		width: 100%;
+	}
+
+	div.about-img-div>img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	.about-text {
+		padding: 30px;
 	}
 }
 
