@@ -19,6 +19,42 @@ div.home-img-div>img {
 	position: absolute;
 }
 
+a {
+	color: white;
+}
+
+a:hover {
+	opacity: .8;
+}
+
+li.active>a {
+	text-decoration: underline;
+}
+
+a.social-link {
+	margin-left: 5px;
+}
+
+a.social-link>img {
+	height: 27px;
+	width: 27px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+.project-header {
+	margin-bottom: 60px;
+	line-height: 1.67em;
+}
+
+.project-description {
+	line-height: normal;
+	padding-top: 30px;
+	font-family: Avenir, sans-serif;
+}
+
 @media only screen and (max-width: 767px) {
 	.nav-bar-div-condensed {
 		padding-bottom: 0;
@@ -77,14 +113,14 @@ div.home-img-div>img {
 		position: absolute;
 	}
 
-	.about-div-container {
+	.about-div-container, .design-div-container, .project-div-container {
 		padding: 0;
 		position: relative;
 		height: -webkit-fill-available;
 		height: -moz-available; 
 	}
 
-	.about-div-content {
+	.about-div-content, .design-div-content, .project-div-content {
 		margin: 0;
 		padding: 80px 40px;
 	}
@@ -147,14 +183,14 @@ div.home-img-div>img {
 		position: absolute;
 	}
 
-	.about-div-container, .design-div-container {
+	.about-div-container, .design-div-container, .project-div-container {
 		padding: 0;
 		position: relative;
 		height: -webkit-fill-available;
 		height: -moz-available; 
 	}
 
-	.about-div-content, .design-div-content {
+	.about-div-content, .design-div-content, .project-div-content {
 		margin: 0;
 		padding: 80px;
 		/*border: 1px solid white;*/
@@ -204,25 +240,11 @@ div.home-img-div>img {
 	img.design-preview-image:hover {
 		cursor: pointer;
 	}
-}
 
-a {
-	color: white;
-}
-
-a:hover {
-	opacity: .8;
-}
-
-li.active>a {
-	text-decoration: underline;
-}
-
-a.social-link {
-	margin-left: 5px;
-}
-
-a.social-link>img {
-	height: 27px;
-	width: 27px;
+	.columns.project-row {
+		margin-bottom: 20px;
+	}
+	.project-text {
+		font-size: .8em;
+	}
 }
