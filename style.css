@@ -25,6 +25,7 @@ a {
 
 a:hover {
 	opacity: .8;
+	color: #e0deed;
 }
 
 li.active>a {
@@ -55,6 +56,31 @@ h1 {
 	font-family: Avenir, sans-serif;
 }
 
+.card-content {
+	background-color: white;
+	color: black;
+	padding: 1.225em;
+}
+
+figure {
+	overflow: hidden;
+	background-color: #e0deed;
+}
+
+.image.is-4by3 img {
+	height: auto;
+	margin: auto;
+}
+
+.image.is-4by3.long img{
+	margin: 0;
+}
+
+div.project-image>img {
+	width: -webkit-fill-available;
+	width: -moz-available; 
+}
+
 @media only screen and (max-width: 767px) {
 	.nav-bar-div-condensed {
 		padding-bottom: 0;
@@ -80,7 +106,7 @@ h1 {
 		right: 0;
 	}
 
-	.nav-menu {
+	.navbar-menu {
 		display: none;
 		position: fixed;
 		top: 0;
@@ -113,16 +139,24 @@ h1 {
 		position: absolute;
 	}
 
-	.about-div-container, .design-div-container, .project-div-container {
+	div.social-links>p {
+		margin-top: 20px;
+		width: 75%;
+		font-size: .75em;
+	}
+
+	.about-div-container, .design-div-container, .project-div-container,
+	.development-div-container, .fine-arts-div-container {
 		padding: 0;
 		position: relative;
 		height: -webkit-fill-available;
 		height: -moz-available; 
 	}
 
-	.about-div-content, .design-div-content, .project-div-content {
+	.about-div-content, .design-div-content, .project-div-content,
+	.development-div-content, .fine-arts-div-content {
 		margin: 0;
-		padding: 80px 40px;
+		padding: 40px;
 	}
 
 	.about-img-div {
@@ -183,14 +217,22 @@ h1 {
 		position: absolute;
 	}
 
-	.about-div-container, .design-div-container, .project-div-container {
+	div.social-links>p {
+		margin-top: 20px;
+		width: 75%;
+		font-size: .75em;
+	}
+
+	.about-div-container, .design-div-container, .project-div-container,
+	.development-div-container, .fine-arts-div-container {
 		padding: 0;
 		position: relative;
 		height: -webkit-fill-available;
 		height: -moz-available; 
 	}
 
-	.about-div-content, .design-div-content, .project-div-content {
+	.about-div-content, .design-div-content, .project-div-content,
+	.development-div-content, .fine-arts-div-container {
 		margin: 0;
 		padding: 80px;
 		/*border: 1px solid white;*/
@@ -210,11 +252,11 @@ h1 {
 		padding: 30px;
 	}
 
-	.design-preview {
+	.design-preview, .development-preview, .fine-arts-preview {
 		position: relative;
 	}
 
-	.design-preview-title {
+	/*.design-preview-title, .development-preview-title, .fine-arts-preview-title {
 		width: 100%;
 		height: 20px;
 		display: inline-block;
@@ -225,21 +267,21 @@ h1 {
     	-moz-transform: rotate(-90deg); 
     	-webkit-transform: origin(0 0); 
     	-moz-transform: origin(0 0); 
-    	/*margin-left: -25%;*/
     	padding: 0;
 	}
 
-	div.design-preview-title>p {
+	div.design-preview-title>p, div.development-preview-title>p, div.fine-arts-preview-title>p {
 		text-align: right;
 	}
 
-	.design-preview-image {
+	.design-preview-image, .development-preview-image, .fine-arts-preview-image {
 		display: inline-block;
+		height: 200px;
 	}
 
-	img.design-preview-image:hover {
+	img.design-preview-image:hover, img.development-preview-image:hover, img.fine-arts-image:hover {
 		cursor: pointer;
-	}
+	}*/
 
 	.columns.project-row {
 		margin-bottom: 20px;
